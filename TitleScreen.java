@@ -44,6 +44,8 @@ public class TitleScreen extends World
         Label label = new Label("Press Space to Start", 40);
         addObject(label,292,213);
         Label label2 = new Label("Use \u2190 and \u2192 to catch the apple", 40);
-        addObject(label2,301,297);
+        addObject(label2,299,250);
+        Label label3 = new Label("Collect fries for speed boost", 40);
+        addObject(label3,301,286);
     }
 }
