@@ -33,6 +33,10 @@ public class Apple extends Actor
             loseSound.play();
             world.gameOver();
             world.removeObject(this);
+            Boost boost = (Boost) world.getObjects(Boost.class).stream().findFirst().orElse(null);
+            if (boost != null) {
+                world.removeObject(boost);
+            }   
         }
         
         if(world.touching) {

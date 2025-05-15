@@ -30,6 +30,8 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 60);
         addObject(scoreLabel, 50, 50);
         
+        createBoost();
+        
         createApple();
         
         Bomb bomb = new Bomb();
@@ -65,5 +67,13 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(getWidth());
         int y = 0;
         addObject(apple, x, y);
+    }
+    
+    public void createBoost(){
+        Boost boost = new Boost();
+        boost.setSpeed(1);
+        int xBoost = Greenfoot.getRandomNumber(getWidth());
+        int yBoost = 0;
+        addObject(boost, xBoost, yBoost);
     }
 }
