@@ -11,6 +11,8 @@ public class MyWorld extends World
     public int score = 0;
     Label scoreLabel;
     int baseSpeed = 2;
+    
+    public boolean touching = false;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -31,6 +33,10 @@ public class MyWorld extends World
         createBoost();
         
         createApple();
+        
+        Bomb bomb = new Bomb();
+        addObject(bomb, Greenfoot.getRandomNumber(600), 0);
+        
     }
     
     /**

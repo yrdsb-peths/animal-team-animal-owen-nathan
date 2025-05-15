@@ -38,6 +38,10 @@ public class Apple extends Actor
                 world.removeObject(boost);
             }   
         }
+        
+        if(world.touching) {
+            world.removeObject(this);
+        }
     }
     
     public void setSpeed(int spd){
