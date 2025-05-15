@@ -34,6 +34,10 @@ public class Apple extends Actor
             world.gameOver();
             world.removeObject(this);
         }
+        
+        if(world.touching) {
+            world.removeObject(this);
+        }
     }
     
     public void setSpeed(int spd){
