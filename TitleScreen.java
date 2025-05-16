@@ -47,5 +47,7 @@ public class TitleScreen extends World
         addObject(label2,299,250);
         Label label3 = new Label("Collect fries for speed boost", 40);
         addObject(label3,301,286);
+        Label label4 = new Label("Dodge the bombs!", 40);
+        addObject(label4,317,328);
     }
 }

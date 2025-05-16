@@ -36,6 +36,8 @@ public class Bomb extends Actor
             world.removeObject(this);
             world.removeObject(elephant);
             world.touching = true;
+            world.removeObjects(world.getObjects(Boost.class));
+            world.removeObjects(world.getObjects(Apple.class));
         }
     }
     
